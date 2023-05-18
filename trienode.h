@@ -1,3 +1,5 @@
+//DAVID LUO
+//CSE 375 HW5
 #ifndef TRIENODE_H
 #define TRIENODE_H
 
@@ -13,12 +15,19 @@ typedef struct TrieNode {
   struct TrieNode *children[SIZE];
 } TrieNode;
 
-// Function declarations
+// Function to create a new TrieNode
 TrieNode *createNode();
+
+// Function to convert a word to its T9 representation
 char *wordToT9(char *word);
+
+// Function to insert a word into the Trie
 void insert(TrieNode *root, const char *key, const char *word);
+
+// Function to search for a word in the Trie
 TrieNode *search(TrieNode *root, const char *key);
+
+// Function to free the memory allocated for the Trie
 void freeTrie(TrieNode *root);
 
 #endif
-
