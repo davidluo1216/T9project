@@ -1,0 +1,29 @@
+> [zluo3@calgary hw5]valgrind --leak-check=full ./t9 dictionary.txt
+==2803846== Memcheck, a memory error detector
+==2803846== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2803846== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==2803846== Command: ./t9 dictionary.txt
+==2803846==
+Enter Key Sequence (or "#" for next word):
+> 729
+'paw'
+Enter Key Sequence (or "#" for next word):
+> 5234
+'kadi'
+Enter Key Sequence (or "#" for next word):
+> #
+There are no more T9onyms
+Enter Key Sequence (or "#" for next word):
+> #
+There are no more T9onyms
+Enter Key Sequence (or "#" for next word):
+> exit
+==2803846==
+==2803846== HEAP SUMMARY:
+==2803846==     in use at exit: 0 bytes in 0 blocks
+==2803846==   total heap usage: 202,186 allocs, 202,186 frees, 12,323,543 bytes allocated
+==2803846==
+==2803846== All heap blocks were freed -- no leaks are possible
+==2803846==
+==2803846== For lists of detected and suppressed errors, rerun with: -s
+==2803846== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0) 
